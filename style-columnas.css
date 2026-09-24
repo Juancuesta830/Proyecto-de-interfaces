@@ -1,0 +1,268 @@
+/* ===================================
+   RESET Y BASE
+=================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.contenedor {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+/* ===================================
+   ENLACE VOLVER
+=================================== */
+.volver {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+/* ===================================
+   ENCABEZADO
+=================================== */
+.encabezado {
+    margin-bottom: 20px;
+}
+
+.encabezado h1,
+.titulo-pagina {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.encabezado p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* ===================================
+   TARJETAS
+=================================== */
+.tarjeta {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+.tarjeta h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+/* ===================================
+   FORMULARIO
+=================================== */
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.campo input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===================================
+   BOTONES
+=================================== */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-principal {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+.btn-principal:hover {
+    background-color: #1e40af;
+}
+
+.btn-secundario {
+    background-color: #ffffff;
+    color: #1e3a8a;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-secundario:hover {
+    background-color: #f8fafc;
+}
+
+/* ===================================
+   ALERTA DE ÉXITO (banner verde)
+=================================== */
+.alerta-exito {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background-color: #16a34a;
+    color: #ffffff;
+    padding: 20px 22px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+
+.alerta-exito .icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.alerta-exito h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.alerta-exito p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===================================
+   DATOS INGRESADOS
+=================================== */
+.dato-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 15px;
+}
+
+.dato-fila:last-child {
+    border-bottom: none;
+}
+
+.dato-fila span {
+    color: #64748b;
+}
+
+.dato-fila strong {
+    color: #0f172a;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* ===================================
+   TABLA DE MATERIALES
+=================================== */
+.tabla {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.tabla-header {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.8fr;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.tabla-header span:nth-child(2),
+.tabla-header span:nth-child(3) {
+    text-align: right;
+}
+
+.tabla-fila {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.8fr;
+    padding: 14px 16px;
+    font-size: 14px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.tabla-fila:nth-child(odd) {
+    background-color: #f8fafc;
+}
+
+.tabla-fila span:first-child {
+    color: #1e293b;
+}
+
+.tabla-fila strong {
+    color: #2563eb;
+    text-align: right;
+    font-weight: 700;
+}
+
+.tabla-fila span:last-child {
+    color: #94a3b8;
+    text-align: right;
+}

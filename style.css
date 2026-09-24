@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e326c, #2850cc);
+}
+
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.encabezado {
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.encabezado p {
+  font-size: 20px;
+  color: #e6e6e6;
+}
+
+form {
+  width: 550px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  margin-top: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+button {
+  width: 100%;
+  height: 52px;
+  background-color: #2850cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e3fa8;
+}
+
+.registro {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 17px;
+  color: #555;
+}
+
+.registro a {
+  margin-left: 6px;
+  color: #2850cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registro a:hover {
+  text-decoration: underline;
+}

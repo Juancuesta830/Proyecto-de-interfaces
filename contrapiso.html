@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Contrapiso</title>
+    <link rel="stylesheet" href="style-columnas.css">
+</head>
+<body>
+    <main class="contenedor">
+        <a href="menu.html" class="volver">← Volver al menú</a>
+
+        <section class="encabezado">
+            <h1>Calcular Contrapiso</h1>
+            <p>Ingresa las dimensiones de la superficie y el espesor deseado.</p>
+        </section>
+
+        <section class="tarjeta formulario">
+            <div class="campo campo-completo">
+                <label for="largoContrapiso">Largo (m)</label>
+                <input type="number" id="largoContrapiso" placeholder="Ej: 5" min="0" step="0.01">
+            </div>
+
+            <div class="campo campo-completo">
+                <label for="anchoContrapiso">Ancho (m)</label>
+                <input type="number" id="anchoContrapiso" placeholder="Ej: 4" min="0" step="0.01">
+            </div>
+
+            <div class="campo campo-completo">
+                <label for="espesorContrapiso">Espesor (cm)</label>
+                <input type="number" id="espesorContrapiso" placeholder="Ej: 10" min="0" step="0.5" value="10">
+            </div>
+
+            <div class="botones">
+                <button type="button" class="btn btn-principal" onclick="calcularContrapiso()">
+                    🧮 CALCULAR MATERIALES
+                </button>
+                <a href="menu.html" class="btn btn-secundario">← VOLVER AL MENÚ</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DONDE SE MUESTRAN LOS RESULTADOS -->
+        <section class="tarjeta resultado" id="resultado" style="display: none;">
+            <!-- El contenido se genera dinámicamente con JavaScript -->
+        </section>
+    </main>
+
+    <script src="contrapiso.js"></script>
+</body>
+</html>

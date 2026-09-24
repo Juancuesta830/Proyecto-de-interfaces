@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora de materiales</title>
+  <meta name="description" content="Calculadora de materiales de construcción">
+  <meta name="keywords" content="calculadora, materiales, construcción">
+  <meta name="author" content="DonSalchichone, DonYuuliano_9,Vito CorLeone ll">
+
+  <link rel="shortcut icon" href="Materiales PRO.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      <img class="logo" src="Materiales PRO.png" alt="Logo Materiales Pro">
+
+      <h1>Calculadora de Materiales</h1>
+      <p>Ingresa tus datos para acceder al sistema</p>
+    </header>
+
+    <form id="form-login" action="Login.html" method="post">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required>
+
+      <button type="submit">INICIAR SESIÓN</button>
+
+      <p class="registro">
+        ¿No tienes una cuenta?
+        <a href="registro.html">Regístrate aquí</a>
+      </p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

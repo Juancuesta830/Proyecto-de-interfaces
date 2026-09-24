@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Materiales</title>
+
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+  <header class="barra-superior">
+
+    <div class="marca">
+      <img src="Materiales PRO.png" alt="Logo Materiales Pro">
+      <h1>Calculadora de Materiales</h1>
+    </div>
+
+    <div class="sesion">
+      <span id="usuario-activo">Usuario</span>
+
+      <button
+        id="cerrar-sesion"
+        type="button"
+        onclick="location.href='Login.html'">
+        ⎋ Cerrar sesión
+      </button>
+    </div>
+
+  </header>
+
+
+  <main class="contenido-menu">
+
+    <section class="introduccion">
+      <h2>¿Qué deseas calcular?</h2>
+      <p>Selecciona el tipo de cálculo que deseas realizar.</p>
+    </section>
+
+    <section class="cuadricula-calculos">
+
+      <article class="tarjeta">
+        <span class="icono">🧱</span>
+
+        <div>
+          <h3>Muro de ladrillo</h3>
+          <p>
+            Calcula superficie y materiales necesarios para construir un muro.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='muro.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">🏛️</span>
+
+        <div>
+          <h3>Viga de hormigón</h3>
+          <p>
+            Calcula los materiales necesarios según el largo de la viga.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='viga.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">🏗️</span>
+
+        <div>
+          <h3>Columnas de hormigón</h3>
+          <p>
+            Calcula los materiales necesarios para una columna.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='columnas.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">🪨</span>
+
+        <div>
+          <h3>Contrapiso</h3>
+          <p>
+            Calcula el volumen y materiales necesarios.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='contrapiso.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">🏠</span>
+
+        <div>
+          <h3>Techo</h3>
+          <p>
+            Calcula los materiales necesarios para el techo.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='techo.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">⬛</span>
+
+        <div>
+          <h3>Pisos</h3>
+          <p>
+            Calcula la superficie incluyendo un 10% adicional por recortes.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='pisos.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">🎨</span>
+
+        <div>
+          <h3>Pintura</h3>
+          <p>
+            Calcula la cantidad de pintura necesaria.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='pintura.html'">
+            Calcular →
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+    <div class="salida">
+
+      <button
+        id="salir-aplicacion"
+        type="button"
+        onclick="salirAplicacion()">
+        🚪 Salir de la aplicación
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+  <script>
+    function salirAplicacion() {
+
+      window.close();
+
+      setTimeout(function() {
+        window.location.href = "login.html";
+      }, 300);
+
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+

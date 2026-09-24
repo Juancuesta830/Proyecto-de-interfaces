@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Pisos</title>
+    <link rel="stylesheet" href="style-columnas.css">
+</head>
+<body>
+    <main class="contenedor">
+        <a href="menu.html" class="volver">← Volver al menú</a>
+
+        <section class="encabezado">
+            <h1>Calcular Pisos</h1>
+            <p>Ingresa las dimensiones de la superficie y el tipo de piso.</p>
+        </section>
+
+        <section class="tarjeta formulario">
+            <div class="campo campo-completo">
+                <label for="anchoPiso">Ancho (m)</label>
+                <input type="number" id="anchoPiso" placeholder="Ej: 5" min="0" step="0.01">
+            </div>
+
+            <div class="campo campo-completo">
+                <label for="largoPiso">Largo (m)</label>
+                <input type="number" id="largoPiso" placeholder="Ej: 10" min="0" step="0.01">
+            </div>
+
+            <div class="botones">
+                <button type="button" class="btn btn-principal" onclick="calcularPiso()">
+                    🧮 CALCULAR MATERIALES
+                </button>
+                <a href="menu.html" class="btn btn-secundario">← VOLVER AL MENÚ</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DONDE SE MUESTRAN LOS RESULTADOS -->
+        <section class="tarjeta resultado" id="resultado" style="display: none;">
+            <!-- El contenido se genera dinámicamente con JavaScript -->
+        </section>
+    </main>
+
+    <script src="pisos.js"></script>
+</body>
+</html>

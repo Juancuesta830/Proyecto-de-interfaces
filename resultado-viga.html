@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado del cálculo</title>
+
+    <link rel="stylesheet" href="style-viga.css">
+
+</head>
+
+
+<body>
+
+    <main class="contenedor resultado-page">
+
+
+        <!-- MENSAJE DE ÉXITO -->
+
+        <div class="mensaje-exito">
+
+            <div class="icono-check">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Cálculo realizado correctamente
+                </strong>
+
+                <p>
+                    Los materiales han sido calculados satisfactoriamente.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TÍTULO -->
+
+        <h1 class="titulo-pagina">
+            Resultado del cálculo
+        </h1>
+
+
+        <!-- DATOS INGRESADOS -->
+
+        <section class="tarjeta datos">
+
+            <h2>
+                DATOS INGRESADOS
+            </h2>
+
+
+            <div class="dato-fila">
+
+                <span>
+                    Tipo de cálculo
+                </span>
+
+                <strong>
+                    Viga de hormigón
+                </strong>
+
+            </div>
+
+
+            <div class="dato-fila">
+
+                <span>
+                    Dimensiones
+                </span>
+
+                <strong class="dato-normal">
+
+                    Largo:
+                    <span id="resultadoLargo">
+                        0
+                    </span>
+                    m
+
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- MATERIALES -->
+
+        <section class="tarjeta materiales">
+
+            <h2>
+                MATERIALES NECESARIOS
+            </h2>
+
+
+            <div class="tabla">
+
+
+                <!-- CABECERA -->
+
+                <div class="tabla-header">
+
+                    <span>
+                        Material
+                    </span>
+
+                    <span>
+                        Cantidad
+                    </span>
+
+                    <span>
+                        Unidad
+                    </span>
+
+                </div>
+
+
+                <!-- CEMENTO -->
+
+                <div class="tabla-fila">
+
+                    <span>
+                        Cemento
+                    </span>
+
+                    <strong id="tablaCemento">
+                        0.00
+                    </strong>
+
+                    <span>
+                        kg
+                    </span>
+
+                </div>
+
+
+                <!-- ARENA -->
+
+                <div class="tabla-fila">
+
+                    <span>
+                        Arena
+                    </span>
+
+                    <strong id="tablaArena">
+                        0.000
+                    </strong>
+
+                    <span>
+                        m³
+                    </span>
+
+                </div>
+
+
+                <!-- PIEDRA -->
+
+                <div class="tabla-fila">
+
+                    <span>
+                        Piedra
+                    </span>
+
+                    <strong id="tablaPiedra">
+                        0.000
+                    </strong>
+
+                    <span>
+                        m²
+                    </span>
+
+                </div>
+
+
+                <!-- HIERRO DEL 8 -->
+
+                <div class="tabla-fila">
+
+                    <span>
+                        Hierro del 8
+                    </span>
+
+                    <strong id="tablaHierro8">
+                        0.00
+                    </strong>
+
+                    <span>
+                        m
+                    </span>
+
+                </div>
+
+
+                <!-- HIERRO DEL 4 -->
+
+                <div class="tabla-fila">
+
+                    <span>
+                        Hierro del 4
+                    </span>
+
+                    <strong id="tablaHierro4">
+                        0.00
+                    </strong>
+
+                    <span>
+                        m
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTONES -->
+
+        <div class="botones-finales">
+
+
+            <a
+                href="viga.html"
+                class="btn btn-principal"
+            >
+                + NUEVO CÁLCULO
+            </a>
+
+
+            <a
+                href="menu.html"
+                class="btn btn-secundario"
+            >
+                ← VOLVER AL MENÚ
+            </a>
+
+
+        </div>
+
+
+    </main>
+
+
+    <script src="viga.js"></script>
+
+</body>
+
+</html>
+
