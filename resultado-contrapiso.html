@@ -51,34 +51,5 @@
         </div>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const tipo = localStorage.getItem("tipoCalculo") || "Sin datos";
-            const dim = localStorage.getItem("dimensiones") || "Sin datos";
-            const origen = localStorage.getItem("origenCalculo") || "contrapiso.html";
-            const matJSON = localStorage.getItem("materiales");
-
-            document.getElementById("resultadoTipo").textContent = tipo;
-            document.getElementById("resultadoDimensiones").textContent = dim;
-            document.getElementById("btnNuevoCalculo").setAttribute("href", origen);
-
-            const tabla = document.getElementById("tablaMateriales");
-            tabla.innerHTML = "";
-
-            if (matJSON) {
-                const materiales = JSON.parse(matJSON);
-                materiales.forEach(item => {
-                    const fila = document.createElement("div");
-                    fila.className = "tabla-fila";
-                    fila.innerHTML = `
-                        <span>${item.nombre}</span>
-                        <strong>${item.cantidad}</strong>
-                        <span>${item.unidad}</span>
-                    `;
-                    tabla.appendChild(fila);
-                });
-            }
-        });
-    </script>
 </body>
 </html>
